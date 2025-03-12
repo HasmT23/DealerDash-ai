@@ -1,0 +1,8 @@
+npx create-next-app@latest car-buying-assistant --typescript --tailwind --eslint
+cd car-buying-assistant 
+mkdir -p src/{services,types,utils,hooks,components,context,pages/api}
+touch src/types/models.ts
+touch src/services/interfaces.ts
+touch src/services/index.ts
+touch src/utils/constants.ts
+touch src/context/AppContext.tsx 
