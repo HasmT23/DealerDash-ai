@@ -65,6 +65,12 @@ jobs:
       id: repo-name
       run: |
         echo "REPO_LOWER=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+    
+    - name: Rename babel config file
+      run: |
+        if [ -f babel.config.mjs ]; then
+          mv babel.config.mjs babel.config.js
+        fi
         
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
