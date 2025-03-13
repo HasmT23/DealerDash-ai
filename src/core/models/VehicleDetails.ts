@@ -12,5 +12,8 @@ export interface VehicleDetails {
     features?: string[];
     images?: string[];
     price?: number;
+    zipCode?: string;
+    createdAt?: string;
+    updatedAt?: string;
   }
   
